@@ -14,10 +14,10 @@
       <!-- 显示选择的不同系列的商品 -->
       <div class="rightSection" v-if="selected==1" id="rightHeight">
         <div v-for="(e,i) in cxqd">
-          <router-link :to="`/list?id=${i}&image=${e.image}`">
+          <router-link :to="`/list?id=${i}&all=${JSON.stringify(e)}`">
             <img :src="e.image" class="w-100" />
           </router-link>
-          <router-link :to="`/list?id=${i}&image=${e.image}`">
+          <router-link :to="`/list?id=${i}&all=${JSON.stringify(e)}`">
             <div class="xilie_title">{{e.title}}</div>
           </router-link>
           <div class="price">
@@ -29,10 +29,10 @@
       <!-- 显示选择的不同系列的商品 -->
       <div class="rightSection" v-if="selected==2" id="rightHeight">
         <div v-for="(e,i) in zltz">
-          <router-link :to="`/list?id=${e.list_id}&image=${e.image}`">
+          <router-link :to="`/list?id=${e.list_id}&all=${JSON.stringify(e)}`">
             <img :src="e.image" class="w-100" />
           </router-link>
-          <router-link :to="`/list?id=${e.list_id}&image=${e.image}`">
+          <router-link :to="`/list?id=${e.list_id}&all=${JSON.stringify(e)}`">
             <div class="xilie_title">{{e.title}}</div>
           </router-link>
           <div class="price">
@@ -44,10 +44,10 @@
       <!-- 显示选择的不同系列的商品 -->
       <div class="rightSection" v-if="selected==3" id="rightHeight">
         <div v-for="(e,i) in ysry">
-          <router-link :to="`/list?id=${e.list_id}&image=${e.image}`">
+          <router-link :to="`/list?id=${e.list_id}&all=${JSON.stringify(e)}`">
             <img :src="e.image" class="w-100" />
           </router-link>
-          <router-link :to="`/list?id=${e.list_id}&image=${e.image}`">
+          <router-link :to="`/list?id=${e.list_id}&all=${JSON.stringify(e)}`">
             <div class="xilie_title">{{e.title}}</div>
           </router-link>
           <div class="price">
@@ -59,10 +59,10 @@
       <!-- 显示选择的不同系列的商品 -->
       <div class="rightSection" v-if="selected==4" id="rightHeight">
         <div v-for="(e,i) in mx">
-          <router-link :to="`/list?id=${e.list_id}&image=${e.image}`">
+          <router-link :to="`/list?id=${e.list_id}&all=${JSON.stringify(e)}`">
             <img :src="e.image" class="w-100" />
           </router-link>
-          <router-link :to="`/list?id=${e.list_id}&image=${e.image}`">
+          <router-link :to="`/list?id=${e.list_id}&all=${JSON.stringify(e)}`">
             <div class="xilie_title">{{e.title}}</div>
           </router-link>
           <div class="price">
@@ -74,10 +74,10 @@
       <!-- 显示选择的不同系列的商品 -->
       <div class="rightSection" v-if="selected==5" id="rightHeight">
         <div v-for="(e,i) in pj">
-          <router-link :to="`/list?id=${e.list_id}&image=${e.image}`">
+          <router-link :to="`/list?id=${e.list_id}&all=${JSON.stringify(e)}`">
             <img :src="e.image" class="w-100" />
           </router-link>
-          <router-link :to="`/list?id=${e.list_id}&image=${e.image}`">
+          <router-link :to="`/list?id=${e.list_id}&all=${JSON.stringify(e)}`">
             <div class="xilie_title">{{e.title}}</div>
           </router-link>
           <div class="price">
@@ -89,10 +89,10 @@
       <!-- 显示选择的不同系列的商品 -->
       <div class="rightSection" v-if="selected==6" id="rightHeight">
         <div v-for="(e,i) in dsf">
-          <router-link :to="`/list?id=${e.list_id}&image=${e.image}`">
+          <router-link :to="`/list?id=${e.list_id}&all=${JSON.stringify(e)}`">
             <img :src="e.image" class="w-100" />
           </router-link>
-          <router-link :to="`/list?id=${e.list_id}&image=${e.image}`">
+          <router-link :to="`/list?id=${e.list_id}&all=${JSON.stringify(e)}`">
             <div class="xilie_title">{{e.title}}</div>
           </router-link>
           <div class="price">
@@ -104,10 +104,10 @@
       <!-- 显示选择的不同系列的商品 -->
       <div class="rightSection" v-if="selected==7" id="rightHeight">
         <div v-for="(e,i) in hj">
-          <router-link :to="`/list?id=${e.list_id}&image=${e.image}`">
+          <router-link :to="`/list?id=${e.list_id}&all=${JSON.stringify(e)}`">
             <img :src="e.image" class="w-100" />
           </router-link>
-          <router-link :to="`/list?id=${e.list_id}&image=${e.image}`">
+          <router-link :to="`/list?id=${e.list_id}&all=${JSON.stringify(e)}`">
             <div class="xilie_title">{{e.title}}</div>
           </router-link>
           <div class="price">
@@ -119,10 +119,10 @@
       <!-- 显示选择的不同系列的商品 -->
       <div class="rightSection" v-if="selected==8" id="rightHeight">
         <div v-for="(e,i) in cf">
-          <router-link :to="`/list?id=${e.list_id}&image=${e.image}`">
+          <router-link :to="`/list?id=${e.list_id}&all=${JSON.stringify(e)}`">
             <img :src="e.image" class="w-100" />
           </router-link>
-          <router-link :to="`/list?id=${e.list_id}&image=${e.image}`">
+          <router-link :to="`/list?id=${e.list_id}&all=${JSON.stringify(e)}`">
             <div class="xilie_title">{{e.title}}</div>
           </router-link>
           <div class="price">

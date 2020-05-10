@@ -2,10 +2,10 @@
   <div>
     <div class="list_header" @click="select">
       <div class="iconfont iconicon-test58" data-id="0"></div>
-      <div :class="selected==1?'boder_bottom':``" data-id="1" @click.stop="select">宝贝</div>
-      <div :class="selected==2?'boder_bottom':``" data-id="2" @click.stop="select">详情</div>
-      <div :class="selected==3?'boder_bottom':``" data-id="3" @click.stop="select">评价</div>
-      <div :class="selected==4?'boder_bottom':``" data-id="4" @click.stop="select">推荐</div>
+      <div :class="selected==1?'boder_bottom':``" data-id="1">宝贝</div>
+      <div :class="selected==2?'boder_bottom':``" data-id="2">详情</div>
+      <div :class="selected==3?'boder_bottom':``" data-id="3">评价</div>
+      <div :class="selected==4?'boder_bottom':``" data-id="4">推荐</div>
     </div>
   </div>
 </template>
@@ -18,11 +18,10 @@ export default {
   },
   methods: {
     select(e) {
-      //如果点击返回时返回之前页
+      // 如果点击返回时返回之前页;
       if (e.target.dataset.id == 0) {
         this.$router.back();
-        console.log("返回");
-      } else {
+      } else if (e.target.parentNode.parentNode.dataset.id) {
         //把自定义属性值赋值到变量seected中
         this.selected = e.target.parentNode.parentNode.dataset.id;
       }
@@ -43,6 +42,7 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  text-align: center;
 }
 .list_header > div {
   flex: 0 0 10%;
