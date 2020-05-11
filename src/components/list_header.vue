@@ -21,9 +21,10 @@ export default {
       // 如果点击返回时返回之前页;
       if (e.target.dataset.id == 0) {
         this.$router.back();
-      } else if (e.target.parentNode.parentNode.dataset.id) {
+      } else if (e.target.dataset.id) {
         //把自定义属性值赋值到变量seected中
-        this.selected = e.target.parentNode.parentNode.dataset.id;
+        this.selected = e.target.dataset.id;
+      }else{
       }
     }
   }
