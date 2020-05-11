@@ -237,7 +237,7 @@ export default {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  margin-top: 5px;
+  padding-top: 5px;
   font-size: 0.8em;
   line-height: 1em;
 }
